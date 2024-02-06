@@ -1,0 +1,9 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 0 $elem-padding-40;
+}

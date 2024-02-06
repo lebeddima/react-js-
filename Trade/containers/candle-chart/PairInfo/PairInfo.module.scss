@@ -1,0 +1,49 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  @media #{$sm} {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.indicators {
+  display: flex;
+  text-transform: uppercase;
+  @media #{$xxxs} {
+    flex-direction: column;
+  }
+}
+
+.indicator_item {
+  display: flex;
+  align-items: center;
+  margin-right: $elem-padding-8;
+}
+
+.indicator_value {
+  @include captions-3();
+  color: var(--font-primary);
+}
+
+.indicator_title {
+  @include captions-2();
+  color: var(--font-secondary);
+  margin-right: $elem-padding-8;
+}
+
+.minmax{
+  display: flex;
+  @media #{$sm} {
+    flex-direction: column;
+  }
+}
+
+.volume{
+  display: flex;
+  @media #{$sm} {
+    flex-direction: column;
+  }
+}

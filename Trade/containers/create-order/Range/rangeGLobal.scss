@@ -1,0 +1,47 @@
+
+// range
+.rangeTrack {
+  height: 2px;
+  width: 100%;
+  background: var(--light-gray);
+  border-radius: 1px;
+  position: relative;
+  z-index: 2;
+  &.maxLimit {
+    background: var(--error);
+  }
+}
+
+.baseThumbBefore {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: var(--white);
+  position: absolute;
+  border-radius: 4px;
+  top: 2px;
+  left: 2px;
+}
+
+.rangeThumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: var(--main);
+
+  &:before {
+    @extend .baseThumbBefore;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &_disable {
+    background: var(--disabled-state);
+    &:before {
+      @extend .baseThumbBefore;
+    }
+  }
+}
+// range-end

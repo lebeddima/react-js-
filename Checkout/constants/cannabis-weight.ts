@@ -1,0 +1,1 @@
+export const MAX_CANNABIS_WEIGHT_LIMIT = 30

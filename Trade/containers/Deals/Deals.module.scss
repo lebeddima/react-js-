@@ -1,0 +1,86 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+  flex:1;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--content-background);
+  @media #{$sm} {
+    flex: auto;
+  }
+  @media #{$lg} {
+    flex: auto;
+  }
+}
+
+.title {
+  @include button-big();
+  color: var(--main);
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header {
+  height: 32px;
+}
+.row {
+  height: 24px;
+}
+
+.header,
+.row {
+  display: flex;
+  color: var(--grid-header);
+  padding: 0 8px;
+  align-items: center;
+}
+.header {
+  text-transform: uppercase;
+  color: var(--grid-header);
+  padding-right: 12px;
+}
+
+.headerCell {
+  @include captions-1();
+  @media #{$xxxs} {
+    font-size: 10px;
+  }
+}
+
+.priceCell {
+  width: 30%;
+}
+
+.quantityCell {
+  width: 40%;
+  text-align: center;
+}
+
+.timeCell {
+  text-align: right;
+  width: 30%;
+}
+
+.contentWrapper {
+  height: calc(100% - 64px);
+  position: relative;
+}
+
+.content {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.row {
+  color: var(--font-secondary);
+  @include captions-2();
+}
+.red {
+  color: var(--red);
+}
+.green {
+  color: var(--green);
+}

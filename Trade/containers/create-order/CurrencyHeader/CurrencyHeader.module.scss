@@ -1,0 +1,66 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: $elem-padding-8 0 $elem-padding-16;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.currency_pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron_icon {
+  display: flex;
+}
+
+.currency {
+  width: 100%;
+  background-color: var(--back-icon);
+  padding: 4px 10px;
+  color: var(--font-primary);
+  border-radius: 6px;
+  text-align: center;
+  @include text-medium();
+}
+
+.available_balance {
+  display: flex;
+  align-items: center;
+}
+
+.wallet_icon,
+.plus_icon {
+  display: flex;
+  align-items: center;
+}
+
+.wallet_icon {
+  padding-right: $elem-padding-8;
+}
+
+.text_block {
+  display: flex;
+  flex-direction: column;
+  padding-right: $elem-padding-8;
+}
+
+.text {
+  color: var(-font-secondary);
+  @include captions-2();
+}
+
+.amount {
+  color: var(--font-primary);
+  @include text-small();
+}
+
+.plus_icon {
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > *:nth-child(2) {
+    margin: 0 8px;
+  }
+}

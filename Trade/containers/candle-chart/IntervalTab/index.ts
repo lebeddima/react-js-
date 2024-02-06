@@ -1,0 +1,1 @@
+export { IntervalTab } from './IntervalTab'

@@ -1,0 +1,1 @@
+export { ButtonProfile } from '../ButtonProfile'

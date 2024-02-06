@@ -1,0 +1,28 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .buttons {
+    display: flex;
+    align-items: flex-end;
+    & > * {
+      margin-right: $elem-padding-8;
+    }
+  }
+  padding: $elem-padding-8;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  @include button-big();
+  color: var(--main);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.priceChange {
+  margin-left: $elem-padding-8;
+}

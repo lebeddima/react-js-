@@ -1,0 +1,1 @@
+export { SwitchPairs } from './SwitchPairs'

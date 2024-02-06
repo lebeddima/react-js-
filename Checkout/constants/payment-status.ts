@@ -1,0 +1,4 @@
+export enum PAYMENT_STATUS {
+  APPROVED = 'APPROVED',
+  FAILURE = 'FAILURE',
+}

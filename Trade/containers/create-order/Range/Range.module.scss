@@ -1,0 +1,113 @@
+@import '@/styles/variables.module.scss';
+
+.thumbProcent {
+  @include captions-2();
+  position: absolute;
+  top: -17px;
+  left: 6px;
+  transform: translate(-50%, 0);
+  &.disabled {
+    color: var(--disabled-state);
+  }
+  &.hide {
+    display: none;
+  }
+  &.right {
+    right: 0;
+    transform: translate(0, 0);
+    left: auto;
+  }
+  &.overhead {
+    color: var(--error);
+  }
+}
+
+.ruler {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  .rulerdata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 35px;
+    position: relative;
+    button {
+      margin-left: -9px;
+      cursor: pointer;
+    }
+    &:first-child button {
+      margin-left: 0;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 6px;
+      border-radius: 1px;
+      background: red;
+      position: absolute;
+      top: 2px;
+      left: -1px;
+      background: var(--font-secondary);
+      opacity: 0.1;
+    }
+    &:last-child:after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 6px;
+      border-radius: 1px;
+      position: absolute;
+      top: 2px;
+      right: -1px;
+      background: var(--font-secondary);
+      opacity: 0.1;
+    }
+  }
+  button {
+    @include captions-2();
+    color: var(--font-secondary);
+    div.active {
+      color: var(--main);
+    }
+  }
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  max-width: 100%;
+  background-color: var(--main);
+  border-radius: 1px;
+}
+
+.disabled {
+  .thumbProcent {
+    color: var(--disabled-state);
+  }
+  .track {
+    background: var(--disabled-state);
+  }
+  .thumb {
+    background: var(--disabled-state);
+    &:before {
+      background: var(--disabled-state);
+    }
+  }
+  .ruler {
+    button{
+      div:before {
+        background: var(--disabled-state);
+      }
+      a {
+        color: var(--disabled-state);
+      }
+    }
+    
+  }
+}

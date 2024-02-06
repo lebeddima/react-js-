@@ -1,0 +1,1 @@
+export { FormForgotPass } from './FormForgotPass'

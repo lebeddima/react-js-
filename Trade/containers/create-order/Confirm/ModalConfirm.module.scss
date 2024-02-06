@@ -1,0 +1,39 @@
+@import '@/styles/Quan2um-variables.scss';
+@import '@/styles/variables.module.scss';
+
+.content {
+  margin-top: 48px;
+  .item {
+    display: flex;
+    justify-content: space-between;
+    @include text-medium();
+    .left {
+      color: var(--font-secondary);
+    }
+  }
+  .pair {
+    margin-bottom: 16px;
+    .left {
+      color: var(--font-secondary);
+    }
+    .right {
+      color: var(--main);
+      &.green {
+        color: var(--green);
+      }
+      &.red {
+        color: var(--red);
+      }
+    }
+  }
+}
+
+.disclaimer {
+  margin-top: 16px;
+  @include captions-1();
+}
+
+.button {
+  margin-top: 32px;
+  width: 100%;
+}

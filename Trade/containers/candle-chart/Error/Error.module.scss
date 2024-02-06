@@ -1,0 +1,12 @@
+@import '@/styles/variables.module.scss';
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  background: var(--content-background);
+}

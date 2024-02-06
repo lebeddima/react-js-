@@ -1,0 +1,1 @@
+export const TAXES_PRICE_IN_PERCENT = 0.13

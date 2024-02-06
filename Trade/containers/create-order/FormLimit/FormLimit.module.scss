@@ -1,0 +1,56 @@
+@import '@/styles/variables.module.scss';
+
+.field {
+  position: relative;
+  margin-top: 10px;
+}
+
+.currency {
+  @include text-small();
+  position: absolute;
+  right: 16px;
+  top: 29px;
+  color: var(--font-secondary);
+  &Market {
+    top: 21px;
+  }
+}
+
+.fee {
+  display: flex;
+  justify-content: space-between;
+  @include text-big();
+  color: var(--main) !important;
+  text-transform: capitalize;
+  margin-top: 16px;
+  margin-top: 32px;
+  & span {
+    &:nth-child(2) {
+      margin-left: auto;
+      margin-right: 4px;
+    }
+  }
+}
+
+.submit {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.range {
+  margin-top: 32px;
+}
+
+.notAuth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: var(--blue-shade-1);
+  border-radius: 12px;
+  color: var(--base);
+  span {
+    @include text-small();
+    margin: 0 3px;
+  }
+}
